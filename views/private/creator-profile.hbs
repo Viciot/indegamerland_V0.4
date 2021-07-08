@@ -1,0 +1,36 @@
+ <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+        <a class="button is-link" href="/private/game/add">Add Game</a>
+        <a class="button is-link" href="/private/creator">Back to games</a>
+        <a class="button has shadow" href="/auth/logout">Log out</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+ <h1> Welcome to your panel, {{currentCreator}}! </h1>
+
+
+{{!-- 
+    // holi no me dejan entrar :'(
+    'vamosssss
+    function(lopetaisfuertemente){
+        if (Victor){
+            return lo petamos mejor
+        }
+    } --}}
+
+<div>
+    
+    {{#each creatorGamesList}}
+        {{name}} <br>
+        <img src="{{thumbnailUrl}}" alt="Game Image"></img> <br>
+        {{creator.username}}<br>
+        <a href="/private/{{_id}}/edit">Edit This Game</a>
+        <a href="/private/{{_id}}/delete">Delete This Game</a>
+        
+    {{/each}}
+    
+</div>

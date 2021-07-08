@@ -1,0 +1,45 @@
+<h1class='title is-1'> Add a New Game</h1>
+
+<div>
+    
+    <form action="/private/game/add" method="post" enctype="multipart/form-data">
+
+    <label> Game Name  
+        <input type ="text" name= "name" required>
+    </label><br>
+
+    <label> Game URL
+        <input type ="url" name= "url" required>
+    </label><br>
+
+    <label> Game Image </label>
+         <input type ="file" name="thumbnailUrl">
+         <br> 
+    
+
+    <label> Description
+        <textarea class= "textarea is hovered" type ="text" name= "description" required maxlength="300">
+        </textarea>
+    </label><br>
+     
+    
+    <label for="genre-select">Select genre: 
+        <select name="genre" id="genre-select">
+            <option value="">--Please choose an option--</option>
+            <option value="Arcade">Arcade</option>
+            <option value="RPG">RPG</option>
+            <option value="Platform">Platform</option>
+            <option value="Strategy">Strategy</option>
+            <option value="Other">Other</option>
+        </select>
+    </label><br>
+   
+    <button type="submit">Add</button>
+   
+    </form>
+
+</div>
+ 
+
+
+

@@ -1,0 +1,43 @@
+<nav  class="nav" role="navigation" aria-label="main navigation">
+    <div>
+        <img src="https://image.flaticon.com/icons/png/512/742/742263.png" width="112" height="28">
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+         <a class="button is-link" href="/auth/signup">Sign up</a>
+         <a class="button is-light" href="/auth/login">Log in</a>
+        </div>
+      </div>
+    </div>
+</nav>
+   
+<div class="container">
+    <h1 class='title is 1' > Welcome to INDIEGAMERLAND </h1>
+    <p class="subtitle">
+        "Where the gamers and the game creators share their experiences"
+    </p>
+</div>
+
+<div>    
+    {{#each gamesList}}
+        {{name}} <br>
+        <img src="{{thumbnailUrl}}" alt="Game Image"></img> <br>
+        {{creator.username}}<br>
+        <a href="{{_id}}" class ="play-button" role="button">PLAY</a><br>
+                
+    {{/each}} 
+</div>
+
+
+<div>
+    {{!-- <iframe src="(aqui ira la url del juego con el id de al lado)" frameborder="0">Game One(aqui tiene que ir un id de un juego y su nombre)</iframe>
+    <iframe src="(aqui ira la url del juego con el id de al lado)" frameborder="0">Game two(aqui tiene que ir un id de un juego y su nombre)</iframe> --}}
+</div>
